@@ -1,1 +1,1 @@
-export { default as Input } from "./Input/Index";
+export { default as Icon } from "./Icon/Index";

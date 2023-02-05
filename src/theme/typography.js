@@ -1,7 +1,7 @@
 export const typography = {
     en: {
-        first: '"Open Sans", sans-serif',
-        second: "arial",
+        first: "Montserrat",
+        // second: "arial",
     },
     ar: {
         first: "cairo",

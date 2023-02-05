@@ -1,23 +1,14 @@
 export const theme = {
     light: {
-        primary: "#f00",
-        secondary: "#6c757d",
-        success: "#28a745",
-        info: "#17a2b8",
-        warning: "#ffc107",
+        primary: "#396CF0",
         danger: "#dc3545",
+        mainBg: "#fff",
+        secBg: "#f1f1f1",
     },
     dark: {
-        primary: "#00f",
-        secondary: "#6c757d",
-        success: "#28a745",
-        info: "#17a2b8",
-        warning: "#ffc107",
+        primary: "#f2d044",
         danger: "#dc3545",
-    },
-    typography: {
-        fontFamily: '"Open Sans", sans-serif',
-        fontSize: "14px",
-        fontWeight: "400",
+        mainBg: "#070707",
+        secBg: "#25272c",
     },
 };

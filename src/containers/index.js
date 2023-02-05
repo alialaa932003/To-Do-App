@@ -1,1 +1,9 @@
-export { default as HomePage } from "./Home";
+export { default as TasksPage } from "./TasksPage";
+export { default as ImagesPage } from "./ImagesPage";
+export { default as StatisticsPage } from "./StatisticsPage";
+export { default as UsersPage } from "./UsersPage";
+export { default as LoginPage } from "./Login";
+export { default as SignupPage } from "./Signup";
+export { default as GuestLayout } from "./GuestLayout";
+export { default as DefaultLayout } from "./DefaultLayout";
+export { default as NotFound } from "./NotFound";

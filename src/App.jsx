@@ -1,4 +1,3 @@
-import "./App.css";
 import { HomePage } from "./containers";
 
 // import {} "./theme/colors";

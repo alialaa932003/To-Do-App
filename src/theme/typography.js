@@ -1,3 +1,9 @@
-// export const REGULAR = I18nManager.isRTL ? "./../assets/fonts/Inter-Regular" : "./../assets/fonts/Inter-Regular"
-// export const MEDIUM = I18nManager.isRTL ? "./../assets/fonts/Inter-Medium" : "./../assets/fonts/Inter-Medium"
-// export const BOLD = I18nManager.isRTL ? "./../assets/fonts/Inter-Bold" : "./../assets/fonts/Inter-Bold"‏
+export const typography = {
+    en: {
+        first: '"Open Sans", sans-serif',
+        second: "arial",
+    },
+    ar: {
+        first: "cairo",
+    },
+};

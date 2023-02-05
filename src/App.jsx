@@ -1,10 +1,11 @@
 import "./App.css";
 import { HomePage } from "./containers";
+
+// import {} "./theme/colors";
 function App() {
     return (
-        <div className="App">
+        <div className="App lol">
             <HomePage />
-            asdads
         </div>
     );
 }

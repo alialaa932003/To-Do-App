@@ -1,3 +1,7 @@
 {
-    "name": "ali alaa"
+    "name": "ali alaa",
+    "tasks": "tasks",
+    "images": "images",
+    "statistics": "statistics",
+    "users": "users"
 }

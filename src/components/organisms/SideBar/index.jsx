@@ -1,32 +1,36 @@
 import React from "react";
+import "./styles.css";
 import { SideItem } from "../../molecules";
-import { FaBeer } from "react-icons/fa";
+import { FaTasks, FaUserSecret } from "react-icons/fa";
+import { IoImages } from "react-icons/io5";
+import { TfiStatsUp } from "react-icons/tfi";
 import { Icon } from "../../atoms";
+import translateFun from "../../../utilities/translate";
 const SideBar = (props) => {
     const items = [
         {
-            name: "tasks",
+            name: translateFun("en", "tasks"),
             to: "/tasks",
-            icon: <FaBeer />,
+            icon: <FaTasks />,
         },
         {
-            name: "Images",
+            name: translateFun("en", "images"),
             to: "/images",
-            icon: <FaBeer />,
+            icon: <IoImages />,
         },
         {
-            name: "Statistics",
+            name: translateFun("en", "statistics"),
             to: "/statistics",
-            icon: <FaBeer />,
+            icon: <TfiStatsUp />,
         },
         {
-            name: "Users",
+            name: translateFun("en", "users"),
             to: "/users",
-            icon: <FaBeer />,
+            icon: <FaUserSecret />,
         },
     ];
     return (
-        <div>
+        <div className="sideBar">
             {items.map((ele, index) => {
                 return (
                     <SideItem to={ele.to} key={index}>

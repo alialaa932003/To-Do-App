@@ -5,7 +5,14 @@
     box-shadow: 0 3px 17px 1px rgb(51,
             48,
             60, .1);
-    width: 27rem;
     background: var(--mainBg);
     height: 100%;
+    width: 7rem;
+    overflow: hidden;
+    transition: .4s all ease;
+}
+
+.sideBar.openSide {
+    width: 27rem;
+
 }

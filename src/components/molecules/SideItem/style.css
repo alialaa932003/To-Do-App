@@ -1,10 +1,39 @@
 .sideItem {
-    font-size: 1.6rem;
     display: flex;
     align-items: center;
     transition: .2s all ease;
     color: var(--mainFont);
+
+    padding: .5rem 2.5rem;
+    transition: .5s all ease;
+}
+
+.openSide .sideItem {
     padding: .5rem 1.5rem;
+    transition: .2s all ease;
+
+}
+
+.sideItem .navIcon {
+    font-size: 1.8rem;
+
+
+}
+
+
+
+.navHead {
+
+    transition: .4s all ease;
+    transform: scale(0);
+    opacity: 0;
+    font-size: 0;
+}
+
+.openSide .sideItem .navHead {
+    font-size: 1.5rem;
+    opacity: 1;
+    transform: scale(1);
 }
 
 .sideItem:not(:last-child) {

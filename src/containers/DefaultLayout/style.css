@@ -5,4 +5,10 @@
 
 .bodyContainer {
     width: 100%;
+    margin-left: 7rem;
+    transition: .4s all ease;
+}
+
+.defaultLayout.openSide .bodyContainer {
+    margin-left: 27rem;
 }

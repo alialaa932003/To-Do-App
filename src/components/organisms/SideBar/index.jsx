@@ -1,9 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useContext } from "react";
 import "./styles.css";
+import { SideBarContext } from "../../../App";
 import { SideItem, Brand } from "../../molecules";
-
 import { FaTasks, FaUserSecret } from "react-icons/fa";
-
 import { IoImages } from "react-icons/io5";
 import { TfiStatsUp } from "react-icons/tfi";
 import { Icon } from "../../atoms";
@@ -31,15 +30,16 @@ const SideBar = (props) => {
             icon: <FaUserSecret />,
         },
     ];
+    const sideState = useContext(SideBarContext);
 
     return (
-        <div className="sideBar">
+        <div className={`sideBar ${sideState.sideState}`}>
             <Brand className="brand"></Brand>
             {items.map((ele, index) => {
                 return (
                     <SideItem key={index} className={`sideItem`} to={ele.to}>
-                        <Icon className='navIcon'>{ele.icon}</Icon>
-                        <span>{ele.name}</span>
+                        <Icon className="navIcon">{ele.icon}</Icon>
+                        <span className="navHead">{ele.name}</span>
                     </SideItem>
                 );
             })}

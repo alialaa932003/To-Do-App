@@ -1,36 +1,74 @@
 .brand {
     display: flex;
     align-content: center;
+
     justify-content: space-between;
     margin-bottom: 1rem;
     padding: 2rem 1.5rem;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(178, 173, 173, 0.3);
+}
+
+.sideBar.openSide .brand {
+    transition: 5s all ease;
+
 
 }
 
 .brand h2 {
-    font-size: 2.2rem;
-
+    font-size: 0;
+    font-weight: 600;
+    transition: .4s all ease;
 }
 
 .brand h2 span {
-
     color: var(--primary);
 }
 
 .brandIcon {
-    font-size: 2.4rem;
     color: var(--primary);
+    transition: .4s all ease;
+    font-size: 0;
+
+}
+
+.sideBar.openSide .brandIcon {
+    font-size: 2.4rem;
     margin-right: .8rem;
 }
 
 .brandContent {
     display: flex;
     align-items: center;
+
+}
+
+.sideBar.openSide .brand h2 {
+    transition: .4s all ease;
+    opacity: 1;
+
+    font-size: 2rem;
+
+}
+
+.brandContent:hover {
+    display: flex;
 }
 
 .sideBtn {
-    color: var(--mainFont);
+    color: var(--primary);
     font-size: 1.8rem;
     font-weight: 900;
+    padding: 0 1rem 0 0rem;
+    transition: .3s all ease;
+}
+
+.sideBar.openSide .sideBtn {
+
+
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.sideBar.openSide .sideBtn {
+    color: var(--mainFont);
 }

@@ -5,7 +5,6 @@ import { Link, Outlet, NavLink } from "react-router-dom";
 import "./style.css";
 
 const SideItem = (props, ref) => {
-    console.log(props.active);
     return (
         <NavLink
             onClick={props.onClick}

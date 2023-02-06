@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Icon } from "../../atoms";
 import { FaBeer } from "react-icons/fa";
 import { Link, Outlet, NavLink } from "react-router-dom";
-const SideItem = (props) => {
-    return <Link to={props.to}>{props.children}</Link>;
+import "./style.css";
+
+const SideItem = (props, ref) => {
+    console.log(props.active);
+    return (
+        <NavLink
+            onClick={props.onClick}
+            className={`${props.className}`}
+            to={props.to}
+            data-active={props["data-active"]}
+        >
+            {props.children}
+        </NavLink>
+    );
 };
 
 export default SideItem;

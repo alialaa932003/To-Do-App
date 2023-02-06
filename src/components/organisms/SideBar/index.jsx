@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./styles.css";
-import { SideItem } from "../../molecules";
+import { SideItem, Brand } from "../../molecules";
+
 import { FaTasks, FaUserSecret } from "react-icons/fa";
+
 import { IoImages } from "react-icons/io5";
 import { TfiStatsUp } from "react-icons/tfi";
 import { Icon } from "../../atoms";
@@ -29,12 +31,14 @@ const SideBar = (props) => {
             icon: <FaUserSecret />,
         },
     ];
+
     return (
         <div className="sideBar">
+            <Brand className="brand"></Brand>
             {items.map((ele, index) => {
                 return (
-                    <SideItem to={ele.to} key={index}>
-                        <Icon>{ele.icon}</Icon>
+                    <SideItem key={index} className={`sideItem`} to={ele.to}>
+                        <Icon className='navIcon'>{ele.icon}</Icon>
                         <span>{ele.name}</span>
                     </SideItem>
                 );

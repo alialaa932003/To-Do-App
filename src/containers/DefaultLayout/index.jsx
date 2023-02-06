@@ -6,7 +6,9 @@ const DefaultLayout = () => {
     return (
         <div className="defaultLayout">
             <SideBar />
-            <Outlet />
+            <div className="bodyContainer">
+                <Outlet />
+            </div>
         </div>
     );
 };

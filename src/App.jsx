@@ -10,14 +10,13 @@ import {
     StatisticsPage,
 } from "./containers";
 import { Link, Navigate, Route, Routes, BrowserRouter } from "react-router-dom";
-import { theme, typography } from "./theme";
+import { typography } from "./theme";
 // import {} "./theme/colors";
 function App() {
     return (
         <div
-            className="App"
+            className="App ligth"
             style={{
-                background: theme["light"].mainBg,
                 fontFamily: typography["en"].first,
             }}
         >

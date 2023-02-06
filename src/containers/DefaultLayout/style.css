@@ -1,4 +1,8 @@
 .defaultLayout {
     display: flex;
+    background: var(--secBg);
+}
 
+.bodyContainer {
+    width: 100%;
 }

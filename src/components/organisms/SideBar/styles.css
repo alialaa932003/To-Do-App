@@ -9,10 +9,12 @@
     height: 100%;
     width: 7rem;
     overflow: hidden;
+    z-index: 999;
     transition: .4s all ease;
 }
 
-.sideBar.openSide {
+.sideBar.openSide,
+.sideBar:hover {
     width: 27rem;
 
 }

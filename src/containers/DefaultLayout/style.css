@@ -1,12 +1,14 @@
 .defaultLayout {
     display: flex;
     background: var(--secBg);
+
 }
 
 .bodyContainer {
     width: 100%;
     margin-left: 7rem;
     transition: .4s all ease;
+    padding: 2rem 2rem;
 }
 
 .defaultLayout.openSide .bodyContainer {

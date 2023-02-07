@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import "./styles.css";
 import { SideBarContext } from "../../../App";
 import { SideItem, Brand } from "../../molecules";
@@ -30,10 +30,23 @@ const SideBar = (props) => {
             icon: <FaUserSecret />,
         },
     ];
+    const [width, setWindowWidth] = useState(0);
+    console.log(width);
+    useEffect(() => {
+        updateDimensions();
+
+        window.addEventListener("resize", updateDimensions);
+        return () => window.removeEventListener("resize", updateDimensions);
+    }, []);
+    const updateDimensions = () => {
+        const width = window.innerWidth;
+        setWindowWidth(width);
+    };
+
     const sideState = useContext(SideBarContext);
 
     return (
-        <div className={`sideBar ${sideState.sideState}`}>
+        <div className={`sideBar ${width >= 992 ? sideState.sideState : ""}`}>
             <Brand className="brand"></Brand>
             {items.map((ele, index) => {
                 return (

@@ -5,7 +5,8 @@ const Input = (props, ref) => {
         <input
             className={`${props.className ? props.className : ""}`}
             ref={props.forwardRef}
-            type="text"
+            type={props.type}
+            placeholder={props.placeholder}
         />
     );
 };

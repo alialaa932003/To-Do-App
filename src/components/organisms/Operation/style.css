@@ -1,0 +1,16 @@
+.operation {
+    align-items: center;
+}
+
+.operation:not(:last-of-type) {
+    margin-bottom: 3rem;
+}
+
+.taskUserInfo .infoImg {
+    width: 10rem;
+    height: 10rem;
+}
+
+/* .taskUserInfo h3 {
+    font-size: 1.8rem;
+} */

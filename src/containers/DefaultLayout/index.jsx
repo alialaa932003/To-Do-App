@@ -6,7 +6,6 @@ import { SideBarContext } from "../../App";
 import "./style.css";
 const DefaultLayout = () => {
     const [width, setWindowWidth] = useState(0);
-    console.log(width);
     useEffect(() => {
         updateDimensions();
 

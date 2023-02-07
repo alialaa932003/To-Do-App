@@ -4,6 +4,13 @@ input {
     border-radius: 4rem;
     color: var(--secFont);
     background: var(--mainBg);
-    padding: 1rem;
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+    box-shadow: var(--shadow);
+    font-family: inherit;
+    font-weight: 500;
 }
 
+input::placeholder {
+    color: var(--secFont);
+}

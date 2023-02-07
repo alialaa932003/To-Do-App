@@ -2,6 +2,10 @@
     margin-left: 2rem;
     font-family: inherit !important;
     text-align: left;
+    background: var(--mainBg) !important;
+    border-radius: 1.5rem !important;
+    box-shadow: var(--shadow);
+
 }
 
 .userImg {

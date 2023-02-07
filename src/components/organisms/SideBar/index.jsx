@@ -31,7 +31,7 @@ const SideBar = (props) => {
         },
     ];
     const [width, setWindowWidth] = useState(0);
-    console.log(width);
+
     useEffect(() => {
         updateDimensions();
 

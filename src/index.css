@@ -89,6 +89,7 @@ button {
     --secBg: #fafaff;
     --mainFont: #31394D;
     --secFont: #B2ADAD;
+    --shadow: 0 1px 15px rgba(0, 0, 0, 0.08)
 }
 
 .App.dark {

@@ -2,7 +2,7 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import user1 from "../../../assets/imgs/user1.jpg";
+import userImg from "../../../assets/imgs/user2.jpg";
 import "./style.css";
 import { FaChevronDown } from "react-icons/fa";
 import { Icon } from "../../atoms";
@@ -27,7 +27,7 @@ export default function UserMenu() {
                 className="userMenu"
             >
                 <span className="userImg">
-                    <img className="" src={user1} alt="" />
+                    <img className="" src={userImg} alt="" />
                 </span>
                 <div className="userContent">
                     <h3>ali alaa eldin</h3>

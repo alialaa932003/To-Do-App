@@ -4,7 +4,7 @@ import { Search, UserMenu } from "../../molecules";
 const NavBar = () => {
     return (
         <div className="navBar">
-            <Search />
+            <Search placeholder="Search for anything" />
             <UserMenu />
         </div>
     );

@@ -1,0 +1,24 @@
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.infoImg {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.infoImg img {
+    height: 100%;
+}
+
+.userInfo h3 {
+    color: var(--mainFont);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}

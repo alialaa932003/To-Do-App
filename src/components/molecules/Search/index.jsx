@@ -6,7 +6,12 @@ import "./style.css";
 const Search = (props) => {
     return (
         <div className="search">
-            <Input className="searchInput" forwardRef={props.forwerdRef} />
+            <Input
+                type="search"
+                className="searchInput"
+                forwardRef={props.forwerdRef}
+                placeholder={props.placeholder}
+            />
             <Icon className="searchIcon">
                 <RiUserSearchLine />
             </Icon>

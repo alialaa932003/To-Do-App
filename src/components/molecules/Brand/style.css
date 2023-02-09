@@ -45,7 +45,7 @@
 }
 
 .brandContent span {
-    transition: 0s;
+    /* transition: 0s; */
 }
 
 .sideBar.openSide .brand h2,

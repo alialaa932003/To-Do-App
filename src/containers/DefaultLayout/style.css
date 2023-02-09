@@ -2,7 +2,7 @@
     display: flex;
     background: var(--secBg);
     min-height: 100vh;
-
+    transition: .4s all ease
 }
 
 .bodyContainer {
@@ -14,4 +14,41 @@
 
 .defaultLayout.openSide .bodyContainer {
     margin-left: 27rem;
+}
+
+@media(max-width:1200px) {
+
+    /** user info ***/
+    .taskUserInfo {
+        margin-bottom: 2rem;
+    }
+
+    .operation:not(:last-of-type) {
+        margin-bottom: 6rem;
+    }
+}
+
+@media(max-width:700px) {
+    html {
+        font-size: 57%;
+    }
+
+    /****navbar****/
+    .navBar {
+        flex-direction: column-reverse;
+    }
+
+    .rightNav {
+        margin-bottom: 3rem !important;
+    }
+
+    .search {
+        width: 90%;
+    }
+
+    .bodyContainer {
+        padding: 2rem 1.5rem;
+    }
+
+
 }

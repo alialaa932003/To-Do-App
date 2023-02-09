@@ -30,7 +30,7 @@ const Tasks = (props) => {
         },
     ];
     return (
-        <div className="allTasks">
+        <div className="allTasks animated fadeInDown">
             {users.map((ele, index) => {
                 return <Operation key={index} name={ele.name} src={ele.src} />;
             })}

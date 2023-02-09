@@ -1,3 +1,48 @@
 .taskInput {
-    padding: 2rem 2.5rem;
+    padding: 2rem 6.5rem 2rem 2.5rem;
+}
+
+.taskParent {
+    position: relative;
+}
+
+.taskControl {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3rem;
+}
+
+.taskIcon {
+    font-size: 1.8rem;
+    color: var(--thirdFont);
+    margin: 0 .7rem;
+}
+
+/* 
+.calender {
+    position: absolute;
+    top: 50%;
+    right: 8rem;
+    transform: translate(0, -50%);
+} */
+.css-1hbyad5-MuiTypography-root {
+    display: none;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+    color: var(--primary);
+    font-size: 1.4rem !important;
+    font-weight: 500 !important;
+    font-family: 'Montserrat' !important;
+}
+
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root,
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root {
+    font-size: 1.4rem !important;
+}
+
+.css-10fao8b-MuiPickersCalendarHeader-labelContainer {
+
+    font-size: 1.4rem !important;
 }

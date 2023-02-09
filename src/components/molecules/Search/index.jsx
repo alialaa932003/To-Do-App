@@ -5,7 +5,7 @@ import { RiUserSearchLine } from "react-icons/ri";
 import "./style.css";
 const Search = (props) => {
     return (
-        <div className="search">
+        <div className={props.className}>
             <Input
                 type="search"
                 className="searchInput"

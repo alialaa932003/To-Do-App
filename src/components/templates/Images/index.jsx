@@ -1,7 +1,12 @@
 import React from "react";
-
+import { ImageFilter } from "../../organisms";
+import "./style.css";
 const Images = () => {
-    return <div>images</div>;
+    return (
+        <div className="animated fadeInDown">
+            <ImageFilter />
+        </div>
+    );
 };
 
 export default Images;

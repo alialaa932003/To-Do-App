@@ -1,6 +1,11 @@
+.mainSearch {
+    position: relative;
+    
+}
+
 .search {
     width: 60%;
-    position: relative;
+
 }
 
 .searchIcon {
@@ -9,7 +14,8 @@
     right: 2rem;
     transform: translateY(-50%);
     font-size: 2rem;
-    color: rgba(49, 57, 77, 1);
+    color: var(--thirdFont);
+    transition: .3s all ease;
 }
 
 .searchInput {

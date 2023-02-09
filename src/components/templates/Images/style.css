@@ -1,0 +1,22 @@
+@media(max-width:1250px) {
+    .imageHead {
+        flex-direction: column;
+
+    }
+
+    .imageSearch {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .imageHead button {
+        padding: 1.5rem 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:500px) {
+    .imageSearch {
+        width: 100%;
+    }
+}

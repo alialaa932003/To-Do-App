@@ -44,6 +44,10 @@
 
 }
 
+.brandContent span {
+    transition: 0s;
+}
+
 .sideBar.openSide .brand h2,
 .sideBar:hover .brand h2 {
     transition: .4s all ease;

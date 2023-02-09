@@ -1,0 +1,33 @@
+.mainBtn {
+    color: var(--mainFont);
+    font-size: 1.4rem;
+    border-radius: 4rem;
+    padding: 1.9rem 3rem;
+    border: 1px solid;
+    font-family: inherit;
+    font-weight: 500;
+    transition: .25s all ease;
+
+}
+
+.primaryBtn {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+.primaryBtn:hover {
+    background: var(--mainBg);
+    color: var(--mainFont);
+}
+
+.secBtn {
+    background: var(--mainBg);
+    color: var(--mainFont);
+    border-color: var(--primary);
+}
+
+.secBtn:hover {
+    background: var(--primary);
+    color: var(--mainBg);
+}

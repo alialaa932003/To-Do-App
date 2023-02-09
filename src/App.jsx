@@ -15,14 +15,17 @@ import { typography } from "./theme";
 export const SideBarContext = React.createContext();
 function App() {
     const [sideState, setSideState] = useState("openSide");
+    const [themeState, setThemeState] = useState("light");
     return (
         <div
-            className="App ligth"
+            className={`App ${themeState}`}
             style={{
                 fontFamily: typography["en"].first,
             }}
         >
-            <SideBarContext.Provider value={{ sideState, setSideState }}>
+            <SideBarContext.Provider
+                value={{ sideState, setSideState, themeState, setThemeState }}
+            >
                 <Routes>
                     <Route path="/" element={<DefaultLayout />}>
                         <Route path="/tasks" element={<TasksPage />} />

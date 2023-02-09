@@ -3,8 +3,9 @@ import "./styles.css";
 const Icon = (props) => {
     return (
         <span
+            {...props}
             style={props.style}
-            className={`${props.className ? props.className : ""} icon`}
+            className={`icon ${props.className ? props.className : ""} `}
         >
             {props.children}
         </span>

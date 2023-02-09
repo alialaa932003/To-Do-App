@@ -1,11 +1,17 @@
 import React, { useRef } from "react";
 import "./style.css";
-import { Search, UserMenu } from "../../molecules";
+import { Search, UserMenu, DarkBtn } from "../../molecules";
 const NavBar = () => {
     return (
         <div className="navBar">
-            <Search placeholder="Search for anything" />
-            <UserMenu />
+            <Search
+                className="search mainSearch"
+                placeholder="Search for anything"
+            />
+            <div className="rightNav">
+                <DarkBtn />
+                <UserMenu />
+            </div>
         </div>
     );
 };

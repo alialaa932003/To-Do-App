@@ -1,0 +1,14 @@
+.imageHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.imageSearch {
+    width: 55%;
+}
+
+.imagePageControl button {
+    margin: 0 1rem;
+}

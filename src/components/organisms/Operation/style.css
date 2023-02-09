@@ -11,6 +11,12 @@
     height: 10rem;
 }
 
+.taskBtns {
+    margin-left: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
 /* .taskUserInfo h3 {
     font-size: 1.8rem;
 } */

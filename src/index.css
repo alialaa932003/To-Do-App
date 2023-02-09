@@ -6,7 +6,7 @@
     outline: none;
     list-style: none;
     text-transform: capitalize;
-
+    /* transition: .3s all ease; */
 }
 
 html {
@@ -23,11 +23,34 @@ body {
     transition: 0.3s all ease;
     margin: 0 auto;
     position: relative;
-
+    padding: 0 !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
+.animated {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 h1,
@@ -89,14 +112,18 @@ button {
     --secBg: #fafaff;
     --mainFont: #31394D;
     --secFont: #B2ADAD;
-    --shadow: 0 1px 15px rgba(0, 0, 0, 0.08)
+    --thirdFont: rgba(49, 57, 77, 1);
+    --shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
+
 }
 
 .App.dark {
     --primary: #f2d044;
     --danger: #dc3545;
-    --mainBg: #070707;
+    /* --mainBg: #30313c; */
+    --mainBg: #30373c;
     --secBg: #25272c;
     --mainFont: #fff;
     --secFont: #cccccc;
+    --thirdFont: #d6d6d6;
 }

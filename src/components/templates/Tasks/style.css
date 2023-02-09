@@ -1,3 +1,65 @@
 .allTasks {
     margin-top: 4rem;
 }
+
+@media(max-width:1200px) {
+
+    /** user info ***/
+    .taskUserInfo {
+        margin-bottom: 2rem;
+    }
+
+    .operation:not(:last-of-type) {
+        margin-bottom: 6rem;
+    }
+}
+
+@media(max-width:1100px) {
+
+    /** btns ***/
+    .taskBtns button {
+        padding: 1.9rem 2.5rem;
+    }
+}
+
+@media(max-width:900px) {
+
+    /** btns ***/
+    .taskBtns button {
+        padding: 1.9rem 2.5rem;
+    }
+
+    /***task input***/
+    .taskParent {
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width:700px) {
+    html {
+        font-size: 57%;
+    }
+
+
+
+    .search {
+        width: 90%;
+    }
+
+    .bodyContainer {
+        padding: 2rem 1.5rem;
+    }
+
+    .taskBtns button {
+        padding: 1.5rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    .searchInput {
+        font-size: 1.3rem;
+    }
+
+    .taskInput {
+        font-size: 1.2rem;
+    }
+}

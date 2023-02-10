@@ -1,0 +1,35 @@
+.imageContentBox {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+}
+
+.imageContent {
+    margin-left: 2rem;
+}
+
+.imageContentImg {
+
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.imageContentImg img {
+    height: 100%;
+}
+
+.imageContent h4 {
+    color: var(--mainFont);
+    font-size: 1.5rem;
+    transition: .3s all ease;
+}
+
+.imageContent span {
+    color: var(--secFont);
+    font-size: 1.3rem;
+    transition: .3s all ease;
+}

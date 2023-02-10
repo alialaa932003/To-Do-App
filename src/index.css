@@ -20,10 +20,10 @@ body {
     font-size: 14px;
     text-transform: capitalize;
     overflow-x: hidden;
-    transition: 0.3s all ease;
+    /* transition: 0.3s all ease; */
     margin: 0 auto;
     position: relative;
-    padding: 0 !important;
+    /* padding: 0 !important; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -106,7 +106,7 @@ button {
 
 
 .App {
-    --primary: #396CF0;
+    --primary: rgb(240, 57, 82);
     --danger: #dc3545;
     --mainBg: #fff;
     --secBg: #fafaff;

@@ -4,4 +4,5 @@ export { default as Search } from "./Search";
 export { default as UserMenu } from "./UserMenu";
 export { default as UserInfo } from "./UserInfo";
 export { default as TaskInput } from "./TaskInput";
+export { default as ImageContent } from "./ImageContent";
 export { default as DarkBtn } from "./DarkBtn";

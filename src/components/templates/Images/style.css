@@ -1,3 +1,7 @@
+.imagesGrid {
+    justify-content: center;
+}
+
 @media(max-width:1250px) {
     .imageHead {
         flex-direction: column;

@@ -7,11 +7,26 @@
     box-shadow: var(--shadow);
 }
 
-.menuParent .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
-    border-radius: 1rem;
-    padding: .5rem 1rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+
+.listMenu {
+    padding: 1.5rem 1.5rem;
+    border-radius: 2rem;
+}
+
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
     margin-top: 1rem;
+    overflow: visible !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 2rem;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    padding: 0 !important;
+    overflow: hidden;
+    border-radius: 2rem;
+
 }
 
 .userImg {
@@ -61,6 +76,10 @@
     background: #f7f7f7 !important;
 }
 
+.darkItem.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover {
+    background: #293034 !important;
+}
+
 .navImageContent .imageContentImg {
     width: 4.5rem;
     height: 4.5rem;
@@ -80,4 +99,8 @@
 .navImageContent .imageContent span {
     color: #B2ADAD;
     font-size: 1.2rem;
+}
+
+.darkContent h4 {
+    color: #fff !important;
 }

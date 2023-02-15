@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useContext, useState } from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -9,6 +9,8 @@ import { MdLogout } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { Icon } from "../../atoms";
 import { IconText, ImageContent } from "../../molecules";
+import { SideBarContext } from "../../../App";
+
 import img from "../../../assets/imgs/user3.jpg";
 export default function UserMenu() {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -19,6 +21,7 @@ export default function UserMenu() {
     const handleClose = () => {
         setAnchorEl(null);
     };
+    const theme = useContext(SideBarContext);
 
     return (
         <>
@@ -53,32 +56,68 @@ export default function UserMenu() {
                 }}
                 className="menuParent"
             >
-                <ImageContent
-                    className="navImageContent"
-                    src={img}
-                    name="ali alaa eldin"
-                    type="admin"
-                />
-                <MenuItem
-                    className="menuItemParent"
-                    onClick={handleClose}
-                    style={{ marginBottom: "1.2rem" }}
+                <div
+                    className="listMenu"
+                    style={{
+                        background:
+                            theme.themeState == "dark" ? "#30373c" : "#fff",
+                    }}
                 >
-                    <IconText className="navListItem">
-                        <Icon className="iconTextIcon profile">
-                            <CgProfile />
-                        </Icon>
-                        <span>profile</span>
-                    </IconText>
-                </MenuItem>
-                <MenuItem className="menuItemParent" onClick={handleClose}>
-                    <IconText className="navListItem">
-                        <Icon className="iconTextIcon logout">
-                            <MdLogout />
-                        </Icon>
-                        <span>Logout</span>
-                    </IconText>
-                </MenuItem>
+                    <ImageContent
+                        className={`navImageContent ${
+                            theme.themeState == "dark"
+                                ? "darkContent"
+                                : "lightContent"
+                        }`}
+                        src={img}
+                        name="ali alaa eldin"
+                        type="admin"
+                    />
+                    <MenuItem
+                        className={`menuItemParent ${
+                            theme.themeState == "dark" ? "darkItem" : ""
+                        }`}
+                        onClick={handleClose}
+                        style={{ marginBottom: "1.2rem" }}
+                    >
+                        <IconText className="navListItem">
+                            <Icon className="iconTextIcon profile">
+                                <CgProfile />
+                            </Icon>
+                            <span
+                                style={{
+                                    color:
+                                        theme.themeState == "dark"
+                                            ? "#fff"
+                                            : "#30373c",
+                                }}
+                            >
+                                profile
+                            </span>
+                        </IconText>
+                    </MenuItem>
+                    <MenuItem
+                        className={`menuItemParent ${
+                            theme.themeState == "dark" ? "darkItem" : ""
+                        }`}
+                    >
+                        <IconText className="navListItem">
+                            <Icon className="iconTextIcon logout">
+                                <MdLogout />
+                            </Icon>
+                            <span
+                                style={{
+                                    color:
+                                        theme.themeState == "dark"
+                                            ? "#fff"
+                                            : "#30373c",
+                                }}
+                            >
+                                Logout
+                            </span>
+                        </IconText>
+                    </MenuItem>
+                </div>
             </Menu>
         </>
     );

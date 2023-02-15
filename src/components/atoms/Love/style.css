@@ -1,5 +1,5 @@
 .heart {
     font-size: 2.2rem;
-    color: #f03952;
-    
+    color: var(--primary);
+
 }

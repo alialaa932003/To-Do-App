@@ -5,7 +5,13 @@
     background: var(--mainBg) !important;
     border-radius: 1.5rem !important;
     box-shadow: var(--shadow);
+}
 
+.menuParent .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 1rem;
 }
 
 .userImg {
@@ -42,4 +48,36 @@
     margin-left: 1rem;
     align-self: flex-start;
     margin-top: 1rem;
+}
+
+.navImageContent {
+    border-bottom:
+        1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    padding: .5rem 0 1.8rem;
+}
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover {
+    background: #f7f7f7 !important;
+}
+
+.navImageContent .imageContentImg {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.navImageContent>* {
+    font-family: 'montserrat';
+
+}
+
+.navImageContent .imageContent h4 {
+    font-size: 1.4rem;
+    color: #31394d;
+    font-weight: 600;
+}
+
+.navImageContent .imageContent span {
+    color: #B2ADAD;
+    font-size: 1.2rem;
 }

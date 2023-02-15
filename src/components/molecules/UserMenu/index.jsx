@@ -5,7 +5,11 @@ import MenuItem from "@mui/material/MenuItem";
 import userImg from "../../../assets/imgs/user2.jpg";
 import "./style.css";
 import { FaChevronDown } from "react-icons/fa";
+import { MdLogout } from "react-icons/md";
+import { CgProfile } from "react-icons/cg";
 import { Icon } from "../../atoms";
+import { IconText, ImageContent } from "../../molecules";
+import img from "../../../assets/imgs/user3.jpg";
 export default function UserMenu() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -39,6 +43,7 @@ export default function UserMenu() {
                 </Icon>
             </Button>
             <Menu
+                style={{ fontFamily: "inherit" }}
                 id="basic-menu"
                 anchorEl={anchorEl}
                 open={open}
@@ -46,10 +51,34 @@ export default function UserMenu() {
                 MenuListProps={{
                     "aria-labelledby": "basic-button",
                 }}
+                className="menuParent"
             >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
-                <MenuItem onClick={handleClose}>Logout</MenuItem>
+                <ImageContent
+                    className="navImageContent"
+                    src={img}
+                    name="ali alaa eldin"
+                    type="admin"
+                />
+                <MenuItem
+                    className="menuItemParent"
+                    onClick={handleClose}
+                    style={{ marginBottom: "1.2rem" }}
+                >
+                    <IconText className="navListItem">
+                        <Icon className="iconTextIcon profile">
+                            <CgProfile />
+                        </Icon>
+                        <span>profile</span>
+                    </IconText>
+                </MenuItem>
+                <MenuItem className="menuItemParent" onClick={handleClose}>
+                    <IconText className="navListItem">
+                        <Icon className="iconTextIcon logout">
+                            <MdLogout />
+                        </Icon>
+                        <span>Logout</span>
+                    </IconText>
+                </MenuItem>
             </Menu>
         </>
     );

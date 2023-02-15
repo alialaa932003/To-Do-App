@@ -6,6 +6,7 @@ import img1 from "../../../assets/imgs/user1.jpg";
 import img3 from "../../../assets/imgs/user3.jpg";
 import img4 from "../../../assets/imgs/user4.jpg";
 import img5 from "../../../assets/imgs/user5.jpg";
+import img6 from "../../../assets/imgs/user6.jpg";
 import "./style.css";
 const Images = () => {
     const menu = [
@@ -13,7 +14,7 @@ const Images = () => {
             name: "ali alaa",
             type: "Copenhagen, Denmark",
             img: img2,
-            background: img1,
+            background: img6,
         },
         {
             name: "ali alaa",
@@ -24,7 +25,7 @@ const Images = () => {
         {
             name: "ali alaa",
             type: "Copenhagen, Denmark",
-            img: img3,
+            img: img6,
             background: img4,
         },
         {
@@ -36,7 +37,7 @@ const Images = () => {
         {
             name: "ali alaa",
             type: "Copenhagen, Denmark",
-            img: img2,
+            img: img4,
             background: img1,
         },
         {

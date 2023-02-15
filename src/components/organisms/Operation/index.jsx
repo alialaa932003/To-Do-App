@@ -7,7 +7,6 @@ import { Button } from "../../atoms";
 
 const Operation = (props) => {
     const [value, setValue] = React.useState();
-    let inputRef = useRef();
 
     return (
         <Grid container className="operation">
@@ -19,7 +18,7 @@ const Operation = (props) => {
                 />
             </Grid>
             <Grid item xl={7} lg={9.5} md={6} xs={12}>
-                <TaskInput forwardRef={inputRef} />
+                <TaskInput />
             </Grid>
             <Grid item xl={3.5} lg={12} md={6} xs={12}>
                 <div className="taskBtns">

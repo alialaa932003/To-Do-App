@@ -4,7 +4,6 @@ const Input = (props, ref) => {
     return (
         <input
             className={`${props.className ? props.className : ""}`}
-            ref={props.forwardRef}
             type={props.type}
             placeholder={props.placeholder}
         />

@@ -6,3 +6,4 @@ export { default as UserInfo } from "./UserInfo";
 export { default as TaskInput } from "./TaskInput";
 export { default as ImageContent } from "./ImageContent";
 export { default as DarkBtn } from "./DarkBtn";
+export { default as IconText } from "./IconText";

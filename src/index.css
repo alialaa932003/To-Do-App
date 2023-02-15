@@ -118,7 +118,7 @@ button {
 }
 
 .App.dark {
-    --primary: #f2d044;
+    --primary: rgb(242, 208, 68);
     --danger: #dc3545;
     /* --mainBg: #30313c; */
     --mainBg: #30373c;

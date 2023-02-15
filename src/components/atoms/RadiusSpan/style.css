@@ -1,0 +1,9 @@
+.radiusSpan {
+    background: var(--mainBg);
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+    color: var(--primary);
+    border-radius: 3rem;
+    box-shadow: var(--shadow);
+    margin-left: 2rem;
+}

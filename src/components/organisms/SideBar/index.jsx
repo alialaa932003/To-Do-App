@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from "react";
+import React, { useEffect, useContext, useState, useRef } from "react";
 import "./styles.css";
 import { SideBarContext } from "../../../App";
 import { SideItem, Brand } from "../../molecules";
@@ -31,7 +31,7 @@ const SideBar = (props) => {
         },
     ];
     const [width, setWindowWidth] = useState(0);
-
+    const sideBarRef = useRef();
     useEffect(() => {
         updateDimensions();
 
@@ -42,11 +42,27 @@ const SideBar = (props) => {
         const width = window.innerWidth;
         setWindowWidth(width);
     };
-
+    // const responsiveFun = function () {
+    //     if (width <= 992) {
+    //         console.log("yes");
+    //         sideBarRef.current.classList.add("openSide");
+    //     }
+    // };
+    // const responsiveFun2 = function () {
+    //     if (width <= 992) {
+    //         console.log("yes");
+    //         sideBarRef.current.classList.remove("openSide");
+    //     }
+    // };
     const sideState = useContext(SideBarContext);
 
     return (
-        <div className={`sideBar ${width >= 992 ? sideState.sideState : ""}`}>
+        <div
+            ref={sideBarRef}
+            // onMouseMove={responsiveFun}
+            // onMouseLeave={responsiveFun2}
+            className={`sideBar ${width >= 992 ? sideState.sideState : ""}`}
+        >
             <Brand className="brand"></Brand>
             {items.map((ele, index) => {
                 return (

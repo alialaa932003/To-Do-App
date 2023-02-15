@@ -8,7 +8,7 @@ const ImageBox = (props) => {
     return (
         <div className="imageBox ">
             <div className="image">
-                <img src={props.background} alt="" />
+                <img width="100" height="100" src={props.background} alt="" />
                 <span className="totalLoves">
                     {props.count}
                     {/* <Icon>

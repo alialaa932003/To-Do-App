@@ -1,0 +1,59 @@
+.userHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.leftHead {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.usersRes {
+    transition: .3s all ease;
+}
+
+.profile {
+
+    background: rgb(120, 109, 241, .1);
+    color: #786DF1;
+}
+
+.logout {
+    color: rgb(59, 203, 237);
+    background: rgb(59, 203, 237, .1);
+}
+
+.userSearch {
+    width: 50%;
+}
+
+@media(max-width:1200px) {
+    .userSearch {
+        width: 70%;
+    }
+}
+
+@media(max-width:900px) {
+    .userHead {
+        flex-direction: column;
+    }
+
+    .delUsers {
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width:650px) {
+    .leftHead {
+        flex-direction: column;
+    }
+
+    .usersRes {
+        margin-top: 2rem;
+        margin-left: 0 !important;
+    }
+
+}

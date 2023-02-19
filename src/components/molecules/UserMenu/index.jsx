@@ -55,14 +55,27 @@ export default function UserMenu() {
                     "aria-labelledby": "basic-button",
                 }}
                 className="menuParent"
+                PaperProps={{
+                    elevation: 0,
+                    sx: {
+                        background: `${
+                            theme.themeState == "dark" ? "#30373c" : "#fff"
+                        }`,
+                        borderRadius: "1rem",
+                        padding: "1rem 1.5rem",
+                        overflow: "visible",
+                        filter: "drop-shadow(0px 2px 10px rgba(0,0,0,0.15))",
+                        mt: 1.5,
+                        "& .MuiAvatar-root": {
+                            width: 32,
+                            height: 32,
+                            ml: -0.5,
+                            mr: 1,
+                        },
+                    },
+                }}
             >
-                <div
-                    className="listMenu"
-                    style={{
-                        background:
-                            theme.themeState == "dark" ? "#30373c" : "#fff",
-                    }}
-                >
+                <div className="listMenu">
                     <ImageContent
                         className={`navImageContent ${
                             theme.themeState == "dark"

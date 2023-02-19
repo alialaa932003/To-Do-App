@@ -28,8 +28,8 @@ function App() {
             >
                 <Routes>
                     <Route path="/" element={<DefaultLayout />}>
-                        <Route path="/tasks" element={<TasksPage />} />
                         <Route path="/" element={<TasksPage />} />
+                        <Route path="/tasks" element={<TasksPage />} />
                         <Route path="/images" element={<ImagesPage />} />
                         <Route
                             path="/statistics"

@@ -18,7 +18,7 @@ const Brand = (props) => {
     };
     return (
         <div className={props.className} style={props.style}>
-            <NavLink to="/tasks" className="brandContent">
+            <NavLink to="/" className="brandContent">
                 <Icon className="brandIcon">
                     <MdOutlineAppRegistration />
                 </Icon>

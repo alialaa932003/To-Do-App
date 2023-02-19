@@ -11,7 +11,7 @@ const SideBar = (props) => {
     const items = [
         {
             name: translateFun("en", "tasks"),
-            to: "/tasks",
+            to: "/",
             icon: <FaTasks />,
         },
         {

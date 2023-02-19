@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
+import "./style.css";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import userImg from "../../../assets/imgs/user2.jpg";
-import "./style.css";
 import { FaChevronDown } from "react-icons/fa";
 import { MdLogout } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";

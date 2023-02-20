@@ -10,7 +10,7 @@ const UserHead = () => {
                     className="userSearch"
                     placeholder="Search for any user"
                 />
-                <RadiusSpan className="usersRes" text="10 results" />
+                <RadiusSpan className="usersRes" text="all results" />
             </div>
             <Button
                 style={{ minWidth: "fit-content" }}

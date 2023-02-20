@@ -1,0 +1,39 @@
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions button {
+    margin: 0 .5rem;
+}
+
+.tableCell {
+    text-align: center;
+    justify-content: center;
+    color: rgba(49, 57, 77, 1);
+    font-weight: 400;
+}
+
+.taskState {
+    border-radius: 3rem;
+    background: #CCE6FF;
+    color: rgba(0, 128, 255, 1);
+    padding: .1rem 1.5rem;
+}
+
+.complete {
+    background: #53EEAD;
+    color: black;
+}
+
+.tableUserInfo .imageContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.tableUserInfo .imageContentImg {
+    min-width: 5.5rem;
+    width: 5.5rem;
+}

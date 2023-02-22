@@ -15,10 +15,20 @@
     color: #ea0606;
 }
 
-.viewBtn {
+.dark .delBtn {
+    color: rgba(255, 255, 255, 0.9);
+    background: rgb(110, 54, 48);
+}
 
+.viewBtn {
     background: #cce6ff;
     color: #0080ff;
+}
+
+.dark .viewBtn {
+
+    background: rgb(35, 131, 226);
+    color: #fff;
 }
 
 
@@ -33,8 +43,23 @@
 }
 
 .complete {
-    background: #53EEAD;
-    color: black;
+    background: #d1ffcc;
+    color: rgb(0 171 21);
+}
+
+
+.dark .taskState {
+    /* color: rgba(255, 255, 255, .8);
+    background: rgba(0, 128, 255, 1); */
+    color: rgba(255, 255, 255, 1);
+    background: rgb(40, 69, 108);
+}
+
+.dark .complete {
+    /* color: #222;
+    background: #aef3a6; */
+    color: rgba(255, 255, 255, 1);
+    background: rgb(43, 89, 63);
 }
 
 .tableUserInfo .imageContent {

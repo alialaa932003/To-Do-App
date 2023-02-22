@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { DataGrid } from "@mui/x-data-grid";
+import { SideBarContext } from "../../../App";
 
 import "./style.css";
-import { display } from "@mui/system";
-import { UserInfo, ImageContent } from "../../molecules";
+import { ImageContent } from "../../molecules";
 import img1 from "../../../assets/imgs/user1.jpg";
 import img2 from "../../../assets/imgs/user2.jpg";
 import img3 from "../../../assets/imgs/user3.jpg";
@@ -196,6 +196,7 @@ const MyTable = () => {
             src: img4,
         },
     ];
+    const theme = useContext(SideBarContext);
 
     return (
         <div style={{ height: 800, width: "100%", marginTop: "4rem" }}>
@@ -203,13 +204,21 @@ const MyTable = () => {
                 sx={{
                     fontFamily: "montserrat",
                     borderRadius: "1.5rem",
-                    color: "#31394D",
+                    color: `${theme.themeState == "dark" ? "#fff" : "#31394D"}`,
                     overflow: "hidden",
-                    background: "white",
+                    background: `${
+                        theme.themeState == "dark" ? "#30373c" : "#fff"
+                    }`,
                     fontSize: "1.4rem",
+                    transition: ".3s all ease",
 
                     ".MuiDataGrid-columnHeaders": {
-                        background: "rgba(250, 250, 250, 1)",
+                        background: `${
+                            theme.themeState == "dark"
+                                ? "rgb(50 57 62)"
+                                : "rgb(252,252,252)"
+                        }`,
+                        transition: ".3s all ease",
                     },
                     ".css-4rl02z-MuiDataGrid-root .MuiDataGrid-columnHeader": {
                         outlineOffset: "-5px",

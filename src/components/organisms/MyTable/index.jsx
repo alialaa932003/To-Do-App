@@ -237,6 +237,20 @@ const MyTable = () => {
                     ".css-levciy-MuiTablePagination-displayedRows": {
                         fontSize: "1.4rem",
                     },
+                    ".css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root": {
+                        color: `${
+                            theme.themeState == "dark"
+                                ? "#fff"
+                                : "rgba(0, 0, 0, 0.6)"
+                        }`,
+                    },
+                    ".css-rtrcn9-MuiTablePagination-root": {
+                        color: "inherit",
+                    },
+                    ".css-zylse7-MuiButtonBase-root-MuiIconButton-root.Mui-disabled":
+                        {
+                            color: "inherit",
+                        },
                 }}
                 getRowHeight={(params) => console.log(params)}
                 rowHeight={86}

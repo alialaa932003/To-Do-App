@@ -8,6 +8,7 @@
     padding: .5rem 1rem;
     border-radius: 4rem;
     font-weight: 600;
+    transition: .3s all ease;
 }
 
 .delBtn {
@@ -16,19 +17,19 @@
 }
 
 .dark .delBtn {
-    color: rgba(255, 255, 255, 0.9);
-    background: rgb(110, 54, 48);
+    background: rgba(241, 109, 109, 0.2);
+    color: #f18f8f;
 }
 
 .viewBtn {
-    background: #cce6ff;
-    color: #0080ff;
+    background: rgb(120, 109, 241, .2);
+    color: #786DF1;
 }
 
 .dark .viewBtn {
 
-    background: rgb(35, 131, 226);
-    color: #fff;
+    background: rgba(109, 118, 241, 0.15);
+    color: #afbaf8;
 }
 
 
@@ -40,6 +41,7 @@
     padding: .1rem 1.5rem;
     font-size: 1.3rem;
     font-weight: 600;
+    transition: .3s all ease;
 }
 
 .complete {
@@ -51,15 +53,13 @@
 .dark .taskState {
     /* color: rgba(255, 255, 255, .8);
     background: rgba(0, 128, 255, 1); */
-    color: rgba(255, 255, 255, 1);
-    background: rgb(40, 69, 108);
+    color: rgb(59, 203, 237);
+    background: rgb(59, 203, 237, .1);
 }
 
 .dark .complete {
-    /* color: #222;
-    background: #aef3a6; */
-    color: rgba(255, 255, 255, 1);
-    background: rgb(43, 89, 63);
+    background: rgba(109, 241, 160, 0.1);
+    color: #6df1be;
 }
 
 .tableUserInfo .imageContent {

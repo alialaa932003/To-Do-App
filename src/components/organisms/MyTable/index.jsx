@@ -42,8 +42,8 @@ const MyTable = () => {
         {
             field: "tasks",
             headerName: "user tasks",
-            flex: 0.3,
-            minWidth: 200,
+            flex: 0.25,
+            minWidth: 150,
             headerClassName: "tableHead",
             headerAlign: "center",
             align: "center",
@@ -64,8 +64,18 @@ const MyTable = () => {
             minWidth: 150,
             headerName: "phone number",
             type: "string",
-            width: 70,
 
+            headerClassName: "tableHead",
+            headerAlign: "center",
+            align: "center",
+            cellClassName: "tableCell",
+        },
+        {
+            field: "email",
+            flex: 0.3,
+            minWidth: 150,
+            headerName: "email address",
+            type: "string",
             headerClassName: "tableHead",
             headerAlign: "center",
             align: "center",
@@ -84,18 +94,20 @@ const MyTable = () => {
             renderCell: (params) => (
                 <div className="actions" style={{ fontFamily: "montserrat" }}>
                     <button
-                        onClick={(e) => {
-                            e.stopPropagation();
-                        }}
-                    >
-                        delete
-                    </button>
-                    <button
+                        className="viewBtn"
                         onClick={(e) => {
                             e.stopPropagation();
                         }}
                     >
                         view
+                    </button>
+                    <button
+                        className="delBtn"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                        }}
+                    >
+                        delete
                     </button>
                 </div>
             ),
@@ -105,73 +117,81 @@ const MyTable = () => {
     const rows = [
         {
             id: 1,
-            user: "Snow",
-            type: "admin",
+            user: "Snow white black",
+            type: "Copenhagen, Denmark",
             phone: "+201234567891",
             tasks: "in progress",
+            email: "example@example.com",
             src: img1,
             state: 0,
         },
         {
             id: 2,
-            user: "ali alaa",
-            type: "admin",
+            user: "ali alaa eldin",
+            type: "Copenhagen, Denmark",
             phone: "+201234567891",
             tasks: "finished",
+            email: "example@example.com",
             src: img2,
             state: 1,
         },
         {
             id: 9,
-            user: "ali alaa",
-            type: "admin",
+            user: "ali alaa eldin",
+            type: "Copenhagen, Denmark",
             phone: "+201234567891",
             tasks: "finished",
+            email: "example@example.com",
             src: img3,
             state: 1,
         },
         {
             id: 10,
-            user: "ali alaa",
-            type: "admin",
+            user: "ali alaa eldin",
+            type: "Copenhagen, Denmark",
             phone: "+201234567891",
             tasks: "finished",
+            email: "example@example.com",
             src: img5,
             state: 1,
         },
         {
             id: 3,
             user: "abdullah albrawy",
-            type: "admin",
+            type: "Copenhagen, Denmark",
             phone: "+201234567891",
             tasks: "in progress",
+            email: "example@example.com",
             state: 0,
             src: img3,
         },
         {
             id: 4,
             user: "ahmed tarboush",
-            type: "admin",
+            type: "Copenhagen, Denmark",
             phone: "+201234567891",
             tasks: "finished",
+            email: "example@example.com",
             state: 1,
             src: img4,
         },
         {
             id: 5,
             user: "abdelrahman mostafa",
-            type: "admin",
+            type: "Copenhagen, Denmark",
             phone: "+201234567891",
             tasks: "finished",
+            email: "example@example.com",
             state: 1,
             src: img5,
         },
         {
             id: 7,
             user: "abdelrahman mostafa",
-            type: "admin",
+            type: "Copenhagen, Denmark",
             phone: "+201234567891",
             tasks: "finished",
+            email: "example@example.com",
             state: 1,
             src: img4,
         },
@@ -187,11 +207,26 @@ const MyTable = () => {
                     overflow: "hidden",
                     background: "white",
                     fontSize: "1.4rem",
+
                     ".MuiDataGrid-columnHeaders": {
                         background: "rgba(250, 250, 250, 1)",
                     },
                     ".css-4rl02z-MuiDataGrid-root .MuiDataGrid-columnHeader": {
                         outlineOffset: "-5px",
+                    },
+                    "&.MuiDataGrid-root .MuiDataGrid-cell:focus-within": {
+                        outline: "none !important",
+                    },
+                    ".css-i4bv87-MuiSvgIcon-root": {
+                        width: "2rem",
+                        height: "2rem",
+                    },
+                    ".tableCell": {
+                        fontSize: "1.4rem ",
+                        fontWeight: 500,
+                    },
+                    ".css-levciy-MuiTablePagination-displayedRows": {
+                        fontSize: "1.4rem",
                     },
                 }}
                 getRowHeight={(params) => console.log(params)}

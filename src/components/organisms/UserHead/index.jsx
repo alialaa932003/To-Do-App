@@ -14,7 +14,7 @@ const UserHead = () => {
             </div>
             <Button
                 style={{ minWidth: "fit-content" }}
-                className="secBtn delUsers"
+                className="primaryBtn delUsers"
             >
                 delete all
             </Button>

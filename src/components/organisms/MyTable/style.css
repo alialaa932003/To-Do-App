@@ -5,20 +5,31 @@
 
 .actions button {
     margin: 0 .5rem;
+    padding: .5rem 1rem;
+    border-radius: 4rem;
+    font-weight: 600;
 }
 
-.tableCell {
-    text-align: center;
-    justify-content: center;
-    color: rgba(49, 57, 77, 1);
-    font-weight: 400;
+.delBtn {
+    background: rgba(234, 6, 6, 0.18);
+    color: #ea0606;
 }
+
+.viewBtn {
+
+    background: #cce6ff;
+    color: #0080ff;
+}
+
+
 
 .taskState {
     border-radius: 3rem;
     background: #CCE6FF;
     color: rgba(0, 128, 255, 1);
     padding: .1rem 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .complete {

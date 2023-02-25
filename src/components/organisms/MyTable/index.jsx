@@ -4,11 +4,11 @@ import { SideBarContext } from "../../../App";
 
 import "./style.css";
 import { ImageContent } from "../../molecules";
-import img1 from "../../../assets/imgs/user1.jpg";
-import img2 from "../../../assets/imgs/user2.jpg";
-import img3 from "../../../assets/imgs/user3.jpg";
-import img4 from "../../../assets/imgs/user4.jpg";
-import img5 from "../../../assets/imgs/user5.jpg";
+import img1 from "../../../assets/imgs/user1.webp";
+import img2 from "../../../assets/imgs/user2.webp";
+import img3 from "../../../assets/imgs/user3.webp";
+import img4 from "../../../assets/imgs/user4.webp";
+import img5 from "../../../assets/imgs/user5.webp";
 const MyTable = () => {
     const columns = [
         {
@@ -16,8 +16,7 @@ const MyTable = () => {
             headerName: "ID",
             minWidth: 70,
             headerClassName: "tableHead",
-            headerAlign: "center",
-            align: "center",
+
             flex: 0.12,
             cellClassName: "tableCell",
         },
@@ -27,8 +26,7 @@ const MyTable = () => {
             minWidth: 170,
             flex: 0.4,
             headerClassName: "tableHead",
-            headerAlign: "center",
-            align: "center",
+
             cellClassName: "tableCell",
             renderCell: (params) => (
                 <ImageContent
@@ -45,8 +43,7 @@ const MyTable = () => {
             flex: 0.25,
             minWidth: 150,
             headerClassName: "tableHead",
-            headerAlign: "center",
-            align: "center",
+
             cellClassName: "tableCell",
             renderCell: (params) => (
                 <span
@@ -66,8 +63,7 @@ const MyTable = () => {
             type: "string",
 
             headerClassName: "tableHead",
-            headerAlign: "center",
-            align: "center",
+
             cellClassName: "tableCell",
         },
         {
@@ -211,11 +207,20 @@ const MyTable = () => {
                     }`,
                     fontSize: "1.4rem",
                     transition: ".3s all ease",
-
+                    ".css-whi0l6": {
+                        color: `${
+                            theme.themeState == "dark" ? "#fff" : "#30373c"
+                        }`,
+                    },
+                    ".css-zun73v": {
+                        color: `${
+                            theme.themeState == "dark" ? "#fff" : "#30373c"
+                        }`,
+                    },
                     ".MuiDataGrid-columnHeaders": {
                         background: `${
                             theme.themeState == "dark"
-                                ? "rgb(50 57 62)"
+                                ? "#272d30"
                                 : "rgb(252,252,252)"
                         }`,
                         transition: ".3s all ease",
@@ -226,9 +231,9 @@ const MyTable = () => {
                     "&.MuiDataGrid-root .MuiDataGrid-cell:focus-within": {
                         outline: "none !important",
                     },
-                    ".css-i4bv87-MuiSvgIcon-root": {
-                        width: "2rem",
-                        height: "2rem",
+                    ".css-vubbuv": {
+                        fontSize: "2.2rem",
+                        color: "inherit",
                     },
                     ".tableCell": {
                         fontSize: "1.4rem ",
@@ -247,12 +252,16 @@ const MyTable = () => {
                     ".css-rtrcn9-MuiTablePagination-root": {
                         color: "inherit",
                     },
+                    ".css-1chpzqh": {
+                        fontSize: "1.4rem",
+                        color: "inherit",
+                    },
+
                     ".css-zylse7-MuiButtonBase-root-MuiIconButton-root.Mui-disabled":
                         {
                             color: "inherit",
                         },
                 }}
-                getRowHeight={(params) => console.log(params)}
                 rowHeight={86}
                 headerHeight={72}
                 rows={rows}
@@ -260,7 +269,6 @@ const MyTable = () => {
                 pageSize={8}
                 rowsPerPageOptions={[9]}
                 checkboxSelection
-                onSelectionModelChange={(itm) => console.log(itm)}
             />
         </div>
     );

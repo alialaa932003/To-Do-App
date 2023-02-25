@@ -3,7 +3,7 @@ import "./style.css";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import userImg from "../../../assets/imgs/user2.jpg";
+import userImg from "../../../assets/imgs/user2.webp";
 import { FaChevronDown } from "react-icons/fa";
 import { MdLogout } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
@@ -11,7 +11,7 @@ import { Icon } from "../../atoms";
 import { IconText, ImageContent } from "../../molecules";
 import { SideBarContext } from "../../../App";
 
-import img from "../../../assets/imgs/user3.jpg";
+import img from "../../../assets/imgs/user3.webp";
 export default function UserMenu() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);

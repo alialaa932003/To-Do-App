@@ -5,3 +5,4 @@ export { default as ImageFilter } from "./ImageFilter";
 export { default as ImageBox } from "./ImageBox";
 export { default as UserHead } from "./UserHead";
 export { default as MyTable } from "./MyTable";
+export { default as Charts } from "./Charts";

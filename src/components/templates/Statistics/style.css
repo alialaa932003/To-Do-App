@@ -1,0 +1,25 @@
+.chartParent {
+    background: var(--mainBg);
+    box-shadow: var(--shadow);
+
+    overflow: scroll;
+    position: relative;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.chartParent::-webkit-scrollbar {
+    display: none;
+}
+
+.statistics {
+
+    margin-top: 4rem;
+}
+
+.barChartHead {
+    font-size: 2.2rem;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    color: var(--thirdFont);
+}

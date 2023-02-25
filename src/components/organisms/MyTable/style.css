@@ -57,6 +57,7 @@
     background: rgb(59, 203, 237, .1);
 }
 
+
 .dark .complete {
     background: rgba(109, 241, 160, 0.1);
     color: #6df1be;
@@ -72,4 +73,12 @@
 .tableUserInfo .imageContentImg {
     min-width: 5.5rem;
     width: 5.5rem;
+}
+
+.dark .css-drj1oe-MuiDataGrid-root .MuiDataGrid-cell {
+    border-bottom-color: #6a6a6a;
+}
+
+.dark .css-i4bv87-MuiSvgIcon-root {
+    color: #fff;
 }
